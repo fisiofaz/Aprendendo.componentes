@@ -6,23 +6,56 @@
 
 :root {
   font-size: 62.5%; /*10px*/
+  --fs-body: 1.6rem;
+  --fs-header: 4rem;
+
   --ff-heading:'Epilogue', sans-serif;
 
   --hue: 250;
   --bb-primary: hsla(var(--hue), 22%, 20%);
   --fc-primary: hsla(var(--hue), 0%, 100%);
   --fc-secondary: hsla(var(--hue), 50%, 80%);
-  ;
 }
 
 body {
   font-family: var(--ff-heading);
+  font-size: var(--fs-body);
 
   background-color: var(--bb-primary);
   color: var(--fc-primary);
+
+}
+
+.page {
+  max-width: 33rem;
+  margin: 0 auto;
+}
+
+img {
+  width: 100%;
+  height: auto;
+}
+
+header {
+  font-family: var(--ff-heading);
+  text-align: center;
+
+  margin: 10rem 0 8rem;
+}
+
+header h1 {
+  font-size: var(--fs-header);
+  line-height: 4.8rem;
+  font-weight: 800;
 }
 
 header p {
   color: var(--fc-secondary);
-  text-transform: uppercase;
+  text-transform: uppercase;  
+
+  line-height: 3.2rem;
+  letter-spacing: 3px;
+  font-weight: 400;
+
+  margin-bottom: 1.7rem;
 }
