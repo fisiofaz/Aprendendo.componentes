@@ -1,0 +1,28 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+:root {
+  font-size: 62.5%; /*10px*/
+  --ff-heading:'Epilogue', sans-serif;
+
+  --hue: 250;
+  --bb-primary: hsla(var(--hue), 22%, 20%);
+  --fc-primary: hsla(var(--hue), 0%, 100%);
+  --fc-secondary: hsla(var(--hue), 50%, 80%);
+  ;
+}
+
+body {
+  font-family: var(--ff-heading);
+
+  background-color: var(--bb-primary);
+  color: var(--fc-primary);
+}
+
+header p {
+  color: var(--fc-secondary);
+  text-transform: uppercase;
+}
