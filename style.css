@@ -77,6 +77,14 @@ main {
   height: 41.6rem;
   object-fit: cover;
   border-radius: 6px;
+
+  transition: all 200ms;
+
+}
+
+.card img:hover {
+  transform: scale(1.1);
+  opacity: 0.4;
 }
 
 .card h2 {
@@ -100,9 +108,42 @@ main {
   color: var(--fc-secondary-dark);
   padding: 0 1.6rem;
   height: 3.8rem;
+
   width: fit-content;
   width: -moz-fit-content;
 
   display: inline-flex;
   align-items: center;
+}
+
+header {
+  animation-name: topdown 700ms; 
+}
+
+main {
+  animation: downtop 700ms 350ms backwards;
+}
+
+@keyframes topdown {
+  0%{
+    opacity: 0;
+    transform: translateY(-15px);
+  }
+
+  100%{
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+@keyframes downtop {
+  0% {
+    opacity: 0;
+    transform: translateY(15px);
+  }
+  
+  100% {
+   opacity: 1;
+   transform: translateY(0);
+  }
 }
