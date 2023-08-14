@@ -18,7 +18,7 @@ Projeto desenvolvido no stage 3 do programa Explorer da RocketSeat. <br/>
 <br>
 
 <p align="center">
-  <img alt="componentes trabalhos" src="" width="100%">
+  <img alt="componentes trabalhos" src="./image/Projeto finalizado.png" width="100%">
 </p>
 
 ## 🚀 Tecnologias
